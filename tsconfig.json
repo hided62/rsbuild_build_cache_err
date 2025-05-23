@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "ES2023"
+    ],
+    "jsx": "preserve",
+    "target": "ES2023",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "jsxImportSource": "vue",
+    "useDefineForClassFields": true,
+    "forceConsistentCasingInFileNames": true,
+    /* modules */
+    "module": "ESNext",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    /* type checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "~/*": [
+        "src/*"
+      ],
+      "@obsd_pull/*": [
+        "obsd_pull/*"
+      ],
+      "@server/*": [
+        "server/*"
+      ]
+    },
+  },
+  "include": [
+    "src",
+    "server",
+    "obsd_pull"
+, "server/dev.ts"  ],
+}
