@@ -6,8 +6,6 @@
   "scripts": {
     "build": "rsbuild build",
     "dev": "tsx ./server/devServer.ts",
-    "format": "prettier --write .",
-    "lint": "eslint .",
     "preview": "rsbuild preview"
   },
   "dependencies": {
