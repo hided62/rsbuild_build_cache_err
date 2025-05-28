@@ -29,6 +29,27 @@ export default defineConfig({
         },
     },
     plugins: [pluginVue()],
+    tools: {
+        rspack: {
+            output: {
+                chunkLoading: 'import',
+                chunkFormat: 'module',
+                module: true,
+                library: {
+                    type: 'module',
+                },
+            },
+            experiments: {
+                outputModule: true,
+            },
+            optimization: {
+                moduleIds: 'deterministic',
+                chunkIds: 'deterministic',
+                mergeDuplicateChunks: false,
+                avoidEntryIife: true,
+            }
+        }
+    },
     dev: {
         lazyCompilation: true,
         watchFiles: [
@@ -42,6 +63,7 @@ export default defineConfig({
           }
         ]
     },
+    
     performance: {
         buildCache: true,
     },
