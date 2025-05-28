@@ -18,8 +18,6 @@
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
     /* type checking */
     "strict": true,
     "noUnusedLocals": true,
