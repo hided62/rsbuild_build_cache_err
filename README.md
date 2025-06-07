@@ -9,7 +9,13 @@
 
 ## Workaround
 
+### Method 1
+
 Set the `buildCache` option to `false` in `rsbuild.config.ts`.
+
+### Method 2
+
+`tools.rspack.optimization.concatenateModules` can be set to `false` in `rsbuild.config.ts`.
 
 ## Note
 

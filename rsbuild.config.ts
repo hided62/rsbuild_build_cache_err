@@ -45,5 +45,12 @@ export default defineConfig({
     performance: {
         buildCache: true,
     },
+    tools: {
+        rspack: {
+            optimization: {
+                //concatenateModules: false, // Workaround
+            }
+        }
+    }
     
 });
